@@ -7,10 +7,14 @@ package com.example.unic_1.mvptest.contractor;
 public interface MainContract {
 
     interface MainView {
+        void showSignInScreen();
 
+        void showSignUpScreen();
     }
 
     interface MainPresenter {
+        void handleSignInButtonClick();
 
+        void handleSignUpButtonClick();
     }
 }
