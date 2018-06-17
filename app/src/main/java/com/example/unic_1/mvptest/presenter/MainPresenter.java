@@ -1,5 +1,7 @@
 package com.example.unic_1.mvptest.presenter;
 
+import android.view.View;
+
 import com.example.unic_1.mvptest.contractor.MainContract;
 
 /**
@@ -15,12 +17,12 @@ public class MainPresenter implements MainContract.MainPresenter {
 
     //////      MainPresenter Methods       ////////
     @Override
-    public void handleSignInButtonClick() {
+    public void handleSignInButtonClick(View view) {
         mView.showSignInScreen();
     }
 
     @Override
-    public void handleSignUpButtonClick() {
+    public void handleSignUpButtonClick(View view) {
         mView.showSignUpScreen();
     }
 }

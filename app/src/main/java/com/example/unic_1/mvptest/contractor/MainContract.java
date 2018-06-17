@@ -1,5 +1,7 @@
 package com.example.unic_1.mvptest.contractor;
 
+import android.view.View;
+
 /**
  * Define the contract between the View {@link com.example.unic_1.mvptest.view.MainActivity}
  * and the Presenter {@link MainPresenter}
@@ -13,8 +15,8 @@ public interface MainContract {
     }
 
     interface MainPresenter {
-        void handleSignInButtonClick();
+        void handleSignInButtonClick(View view);
 
-        void handleSignUpButtonClick();
+        void handleSignUpButtonClick(View view);
     }
 }
